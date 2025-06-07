@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Car Dealer</h1>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Browse Cars</h5>
+                <a asp-page="/Cars/Index" class="btn btn-primary">View Cars</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Add Car</h5>
+                <a asp-page="/Cars/Create" class="btn btn-success">Add Car</a>
+            </div>
+        </div>
+    </div>
+</div>
